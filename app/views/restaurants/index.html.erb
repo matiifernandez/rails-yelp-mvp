@@ -7,7 +7,7 @@
       <div class="col-12 col-md-6 col-lg-4 mb-4">
 
         <div class="card-product p-4">
-          <img src="https://static.photos/food/400/300" alt="<%= restaurant.name %> food image"/>
+          <%= image_tag "#{restaurant.category.downcase}.jpg", alt: "text" %>
 
           <div class="card-product-infos">
             <h2><%= restaurant.name %></h2>
