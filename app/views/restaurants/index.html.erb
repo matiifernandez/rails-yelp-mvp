@@ -1,0 +1,25 @@
+<div class="container mt-3">
+  <h1 class="text-center m-4">Restaurants</h1>
+
+  <div class="row justify-content-center">
+
+    <% @restaurants.each do |restaurant| %>
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+
+        <div class="card-product p-4">
+          <img src="https://static.photos/food/400/300" alt="<%= restaurant.name %> food image"/>
+
+          <div class="card-product-infos">
+            <h2><%= restaurant.name %></h2>
+            <p><i class="fas fa-map-marker-alt"></i> <%= restaurant.address %></p>
+            <p><i class="fas fa-phone"></i> <%= restaurant.phone_number %></p>
+            <p class="badge bg-secondary"><%= restaurant.category.capitalize %></p>
+          </div>
+
+          <%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary w-100 mt-2"%>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+</div>

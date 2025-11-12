@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+.card-product {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-product img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-product-infos {
+  padding: 15px;
+  flex-grow: 1;
+}
